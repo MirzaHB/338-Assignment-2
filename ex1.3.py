@@ -1,16 +1,3 @@
-def func_1(n, cache={}):
-    if n == 0 or n == 1:
-        return n
-    if n in cache:
-        return cache[n]
-    else:
-        result = func_1(n-1) + func_1(n-2)
-    cache[n] = result
-    return result
-
-
-
-
 
 import json
 import sys
